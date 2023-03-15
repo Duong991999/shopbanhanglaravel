@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home-page', function () {
     return view('pages.home');
+
 });
 
 Route::prefix('admin')->group(function () {
